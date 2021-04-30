@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <Navbar dark color="primary" >
-                <div className="container">
-                    <NavbarBrand href="/">Weather App</NavbarBrand>
-                </div>
-                </Navbar>
-            </div>
-        );
-    }
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Weather from './app_component/weather.component';
+
+
+function App() {
+    return (
+        <div className="App">
+            <Weather />
+        </div>
+    )
 }
 
 export default App;
